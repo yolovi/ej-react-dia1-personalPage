@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.react {
+  color: aqua;
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
