@@ -22,7 +22,6 @@ const Contact = () => {
             setMessage("Name must be at least 3 characters");
             setBtnDisabled(true);
           } else {
-            console.log("eee");
             setMessage(null);
             setBtnDisabled(false);
           }
@@ -43,7 +42,7 @@ const Contact = () => {
         console.log("Datos formulario", data);
         localStorage.setItem("user", JSON.stringify(data))
         //limpiamos formulario
-        clearForm();
+        clearForm(); //necesitamos el value en el input para poder modificar el status
         setMessage("Formulario enviado con éxito");
         // setTimeout(() => {
         //   //navigate("/");
@@ -58,12 +57,14 @@ const Contact = () => {
         placeholder="name"
         onChange={handleInputChange}
         name="name"
+        value={data.name} //value conecta nuestro input con el estado. Nos permitira hacer el clear
       />
       <input
         type="email"
         placeholder="email"
         onChange={handleInputChange}
         name="email"
+        value={data.email}
       />
    <button disabled={btnDisabled} type="submit">
           Enviar
