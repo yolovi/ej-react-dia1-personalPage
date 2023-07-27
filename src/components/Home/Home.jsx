@@ -1,6 +1,6 @@
 import Tech from "../Technologies/Tech";
 
-const Home = (props) => {
+const Home = () => {
   return (
     <>
       <h1>Yolanda Lopez</h1>

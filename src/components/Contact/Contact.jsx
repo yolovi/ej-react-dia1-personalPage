@@ -7,7 +7,7 @@ const Contact = () => {
         email: "",
       };
 
-        //*ESTADOS DEL COMPONENTE
+  //ESTADOS DEL COMPONENTE
   //estado del formulario
   const [data, setData] = useState(initialState);
   //estado del botón disabled
@@ -15,7 +15,6 @@ const Contact = () => {
   //estado del mensaje de validación
   const [message, setMessage] = useState("");
   const navigate = useNavigate(); //inicializamos navigate
-
 
 // FUNCIONES
     const handleInputChange = (event) => {
