@@ -1,4 +1,5 @@
 import './App.css'
+import Contact from './components/Contact/Contact'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 
@@ -14,6 +15,7 @@ function App() {
         <Home tech = "JavaScript"/> <br/>
         <Home tech = {tech}/><br/>
         <Home tech = "Mongoose"/> <br/>
+        <Contact/>
       </div>
     </>
   )
