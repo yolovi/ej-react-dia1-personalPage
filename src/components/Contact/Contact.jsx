@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
     const initialState = {
@@ -13,6 +14,8 @@ const Contact = () => {
   const [btnDisabled, setBtnDisabled] = useState(true);
   //estado del mensaje de validación
   const [message, setMessage] = useState("");
+  const navigate = useNavigate(); //inicializamos navigate
+
 
 // FUNCIONES
     const handleInputChange = (event) => {
@@ -44,9 +47,9 @@ const Contact = () => {
         //limpiamos formulario
         clearForm(); //necesitamos el value en el input para poder modificar el status
         setMessage("Formulario enviado con éxito");
-        // setTimeout(() => {
-        //   //navigate("/");
-        // }, 3000);
+        setTimeout(() => {
+          navigate("/");
+        }, 3000);
       };
 
     return (
