@@ -9,12 +9,8 @@ function App() {
   return (
     <>
       <div>
-        <Header/>
-        <h1>Yolanda Lopez</h1>
-        <h3>Technologies I learned:</h3>
-        <Home tech = "JavaScript"/> <br/>
-        <Home tech = {tech}/><br/>
-        <Home tech = "Mongoose"/> <br/>
+        <Header/>  
+        <Home/>    
         <Contact/>
       </div>
     </>

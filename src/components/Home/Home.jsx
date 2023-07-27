@@ -1,7 +1,13 @@
+import Tech from "../Technologies/Tech";
+
 const Home = (props) => {
-    return (
-      <span>Technologie: {props.tech}.</span>
-    )
-  }
-  
-  export default Home
+  return (
+    <>
+      <h1>Yolanda Lopez</h1>
+      <h3>Technologies I have learned:</h3>
+      <Tech />
+    </>
+  );
+};
+
+export default Home;
